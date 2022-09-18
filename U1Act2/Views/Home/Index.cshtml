@@ -1,0 +1,31 @@
+﻿@model U1Act2.Models.PromedioViewModel
+    <html>
+    <head>
+        <link href="~/StyleSheet.css" rel="stylesheet" />
+        <title>Calcificación.</title>
+    </head>
+    <body>
+        <form method="post" action="~/Home/Index">
+
+            <label>Calificación 1.</label>
+            <input type="number" name="Calif1" value="@Model.Calif1" /> <br />
+
+            <label>Calificación 2.</label>
+            <input type="number" name="Calif2" value="@Model.Calif2" /><br />
+
+            <label>Calificación 3.</label>
+            <input type="number" name="Calif3" value="@Model.Calif3" /><br />
+
+            <input type="submit" value="Promedio" /><br />
+
+            <label>Promedio.</label>
+            <input type="number"  value="@Model.Promedio" /><br />
+
+
+            <label>Resultado:</label>
+            <input readonly name="resultado" value="@Model.Resultado" />
+        </form>
+    </body>
+
+    </html>
+
